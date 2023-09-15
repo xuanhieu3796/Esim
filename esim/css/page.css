@@ -66,6 +66,9 @@
 .ratio-16-9{
   padding-top: 56%;
 }
+.ratio-130{
+  padding-top: 130%;
+}
 .rtbs{
     position: absolute;
     top: 0;
@@ -188,7 +191,6 @@ img{
 }
 
 .header-top {
-    border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
@@ -1116,6 +1118,61 @@ ul.fanpage>li>a {
     font-size: 15px;
     line-height: 1.5;
 }
+nav.breadcrumbs-section a img {
+  width: 17px;
+  height: 16px;
+  position: relative;
+  top: -3px;
+  object-fit: contain;
+}
+
+nav.breadcrumbs-section a {
+  position: relative;
+  padding-right: 25px;
+  margin-right: 25px;
+  color: #000;
+  font-weight: 500;
+}
+
+nav.breadcrumbs-section a:before {
+  right: -3px;
+  top: 4px;
+  content: "\f105";
+  position: absolute;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300;
+}
+
+nav.breadcrumbs-section a:last-child:before {
+  display: none;
+}
+
+nav.breadcrumbs-section a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+.breadcrumbs {
+  background: #EBEBEB;
+}
+
+nav.breadcrumbs-section a:last-child {
+    font-weight: 400;
+}
+.breadcrumb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content-detail .img-product {
+    margin-bottom: 110px;
+}
+
+.content-detail .img-product span.before img {
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    bottom: -113px;
+}
+
 @media (min-width: 1200px){
   .section-faq .container {
       max-width: 1400px;
@@ -1123,5 +1180,8 @@ ul.fanpage>li>a {
   .section-partner .link a {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1290px;
   }
 }
